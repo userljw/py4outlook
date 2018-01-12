@@ -16,10 +16,10 @@ def outlook():
     mail = olook.CreateItem(win32.constants.olMailItem)
     mail.Recipients.Add('1@spdb.com.cn')
     mail.CC='1@spdb.com.cn;2@spdb.com.cn'
-    mail.Subject = unicode('新员工日小结-陆嘉炜%s ' % today)
-    body = unicode("程老师您好!""\r\n 附件是我今天的日小结，烦请查收，谢谢！")
+    mail.Subject = unicode(' ' % today)
+    body = unicode("！")
     mail.Body = body
-    attachment = unicode(r"D:\资料\新员工入职\每日小结 -陆嘉炜.xlsx")
+    attachment = unicode(r"")
     mail.Attachments.Add(attachment)
     mail.Send()
     print "send ok"
